@@ -8,16 +8,22 @@ export default function Projects() {
 
   return (
     <Box className={classes.component}>
-        <Box className={classes.content}>
-            <Title className={classes.title}>
-                Projects
-            </Title>
-        </Box>
-        <Box className={classes.grid}>
-           {projects.map((project: Project, index: number) => (
-            <ProjectCard photo={project.photo} key={index} status={project.status} name={project.name} description={project.description} link={project.link} />
-           ))}
-        </Box>
+      <Box className={classes.content}>
+        <Title className={classes.title}>Projects</Title>
+      </Box>
+      <Box className={classes.grid}>
+        {projects.map((project: Project, index: number) => (
+          <ProjectCard
+            photo={project.photo}
+            key={index}
+            status={project.status}
+            name={project.name}
+            description={project.description}
+            link={project.link}
+            gitHub={project.gitHub}
+          />
+        ))}
+      </Box>
     </Box>
   );
 }
