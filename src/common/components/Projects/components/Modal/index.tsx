@@ -34,7 +34,11 @@ export default function Modal(props: IModal) {
     >
       <Grid className={classes.container}>
         <Grid.Col
-          span={5}
+          xl={5}
+          lg={5}
+          md={5}
+          sm={12}
+          xs={12}
           sx={{
             width: '100%',
             display: 'flex',
@@ -44,7 +48,7 @@ export default function Modal(props: IModal) {
         >
           <img src={photo} alt="" style={{ width: '100%' }} />
         </Grid.Col>
-        <Grid.Col span={7}>
+        <Grid.Col xl={7} lg={7} md={7} sm={12} xs={12}>
           <Title>{name}</Title>
           <Title
             sx={{
