@@ -28,16 +28,25 @@ export const useStyles = createStyles((theme) => ({
       transform: 'scale(1.1)',
     },
     width: '20rem',
+    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+      width: '15rem',
+    },
   },
   text1: {
     color: colors.text.main,
-    fontWeight: 400, fontSize: '.9rem'
+    fontWeight: 400, fontSize: '.9rem',
+    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+      fontSize: '.8rem',
+    },
   },
   text2: {
     color: colors.text.main,
     fontWeight: 700,
     fontSize: '2.5rem',
     textAlign: 'center',
+    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+      fontSize: '2rem',
+    },
   },
   text3: {
     color: colors.text.main,
@@ -47,6 +56,9 @@ export const useStyles = createStyles((theme) => ({
     },
     fontSize: '1.2rem',
     textAlign: 'justify',
+    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+      fontSize: '1.1rem',
+    },
   },
   button: {
     width: '20rem',
