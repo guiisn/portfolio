@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Project } from '../../../../api/projects';
 import Modal from '../Modal';
 import { useStyles } from './style';
+import { Icon } from '@iconify/react';
 
 export default function ProjectCard({
   photo,
@@ -42,13 +43,14 @@ export default function ProjectCard({
           <Title sx={{ fontWeight: 600, fontSize: '1.5rem' }}>{name}</Title>
           <Button
             onClick={() => setOpened(true)}
-            variant="filled"
+            variant="outline"
             color={'portfolioBlue.0'}
             radius="lg"
             fullWidth
             className={classes.button}
           >
-            More infos
+            More infos{' '}
+            <Icon width={'1.5rem'} icon="material-symbols:info-rounded" />
           </Button>
         </Box>
       </Paper>

@@ -1,4 +1,5 @@
 import { createStyles } from '@mantine/core';
+import colors from '../../../../styles/colors';
 
 export const useStyles = createStyles((theme) => ({
   card: {
@@ -27,5 +28,13 @@ export const useStyles = createStyles((theme) => ({
       display: 'block',
     },
     display: 'none',
+    span: {
+      display: 'flex',
+      gap: '.7rem'
+    },
+
+    background: 'linear-gradient(45deg, rgb(78, 178, 240) 0%, rgb(38, 104, 223) 100%)',
+    color: colors.background.main,
+    border: 'none',
   },
 }));

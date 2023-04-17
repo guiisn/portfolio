@@ -6,24 +6,34 @@ export default function Experiences() {
   const { classes } = useStyles();
 
   return (
-    <Box className={classes.component} >
-        <Box className={classes.content}>
-            <Title className={classes.title}>
-                Experiences
-            </Title>
-        </Box>
-        <Box sx={{display: 'flex', justifyContent: 'center'}}>
-        <Timeline className={classes.timeline} >
-            {experiences.map((experience: Experience, index: number) => (
-                <Timeline.Item bullet={index + 1} key={index}>
-                <Text className={classes.titleExperiences} onClick={() => window.open(experience.link, '_blank')}>{experience.name}</Text>
-                <Text>{experience.office}</Text>
-                <Text>{experience.period}</Text>
+    <Box className={classes.component}>
+      <Box className={classes.content}>
+        <Title className={classes.title}>Experiences</Title>
+      </Box>
+      <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Timeline className={classes.timeline}>
+          {experiences.map((experience: Experience, index: number) => (
+            <Timeline.Item bullet={index + 1} key={index}>
+              <Text
+                className={classes.titleExperiences}
+                onClick={() => window.open(experience.link, '_blank')}
+              >
+                {experience.name}
+              </Text>
+              <Text>{experience.office}</Text>
+              <Text
+                sx={{
+                  maxWidth: '13rem',
+                  fontSize: '.9rem',
+                }}
+              >
+                {experience?.techs}
+              </Text>
+              <Text>{experience.period}</Text>
             </Timeline.Item>
-            ))}
+          ))}
         </Timeline>
-        </Box>
+      </Box>
     </Box>
   );
 }
-

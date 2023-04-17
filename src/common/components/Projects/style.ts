@@ -21,7 +21,8 @@ export const useStyles = createStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     gap: '1.3rem',
-    marginBottom: '1.3rem',
+    marginTop: '3.75rem',
+    marginBottom: '3.75rem',
     [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
       alignItems: 'center',
       padding: '0 2.31rem',

@@ -21,7 +21,7 @@ export const useStyles = createStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     gap: '1.3rem',
-    marginBottom: '1.3rem',
+    marginBottom: '3.75rem',
     [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
       alignItems: 'center',
       padding: '0 2.31rem',
@@ -31,13 +31,17 @@ export const useStyles = createStyles((theme) => ({
   titleExperiences: {
     color: colors.text.main,
     [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
-      color: colors.primary.main,
+      background: 'linear-gradient(45deg, rgb(78, 178, 240) 0%, rgb(38, 104, 223) 100%)',
+      '-webkit-background-clip': 'text',
+      '-webkit-text-fill-color': 'transparent'
     },
     fontSize: '1.2rem',
     fontWeight: 800,
     cursor: 'pointer',
     ':hover': {
-      color: colors.primary.main,
+      background: 'linear-gradient(45deg, rgb(78, 178, 240) 0%, rgb(38, 104, 223) 100%)',
+      '-webkit-background-clip': 'text',
+      '-webkit-text-fill-color': 'transparent'
     },
   },
   timeline: {
