@@ -32,16 +32,16 @@ export const useStyles = createStyles((theme) => ({
     color: colors.text.main,
     [`@media (max-width: ${theme.breakpoints.lg}px)`]: {
       background: 'linear-gradient(45deg, rgb(78, 178, 240) 0%, rgb(38, 104, 223) 100%)',
-      '-webkit-background-clip': 'text',
-      '-webkit-text-fill-color': 'transparent'
+      'WebkitBackgroundClip': 'text',
+      'WebkitTextFillColor': 'transparent'
     },
     fontSize: '1.2rem',
     fontWeight: 800,
     cursor: 'pointer',
     ':hover': {
       background: 'linear-gradient(45deg, rgb(78, 178, 240) 0%, rgb(38, 104, 223) 100%)',
-      '-webkit-background-clip': 'text',
-      '-webkit-text-fill-color': 'transparent'
+      'WebkitBackgroundClip': 'text',
+      'WebkitTextFillColor': 'transparent'
     },
   },
   timeline: {

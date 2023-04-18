@@ -4,8 +4,8 @@ import { createStyles } from '@mantine/core';
 export const useStyles = createStyles((theme) => ({
   guilherme: {
     background: 'linear-gradient(45deg, rgb(78, 178, 240) 0%, rgb(38, 104, 223) 100%)',
-    '-webkit-background-clip': 'text',
-    '-webkit-text-fill-color': 'transparent'
+    'WebkitBackgroundClip': 'text',
+    'WebkitTextFillColor': 'transparent'
   },
   component: {
     margin: 0,

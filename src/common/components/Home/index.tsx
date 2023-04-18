@@ -15,15 +15,19 @@ export default function Home() {
 
   const [circles, setCircles] = useState<JSX.Element[]>([]);
 
+  let count = 0;
+
   useEffect(() => {
     const size = getRandomNumber(1, 16);
     const interval = setInterval(() => {
+      count++;
+
       if (circles?.length > 100) {
         setCircles([]);
       }
       const newCircle = (
         <div
-          key={circles.length}
+          key={count}
           className="circle"
           style={{
             backgroundColor: '#272727',
