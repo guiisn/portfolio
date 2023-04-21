@@ -6,6 +6,18 @@ export const useStyles = createStyles((theme) => ({
     backgroundColor: '#2D2D2D',
     width: '25rem',
     height: '30rem',
+    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+      width: '20rem',
+      height: '24rem',
+    },
+    [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+      width: '18rem',
+      height: '24rem',
+    },
+    [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      width: '14.8rem',
+      height: '24rem',
+    },
     display: 'flex',
     flexDirection: 'column',
     gap: '1.2rem',

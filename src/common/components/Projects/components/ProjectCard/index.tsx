@@ -19,9 +19,7 @@ export default function ProjectCard({
   return (
     <>
       <Paper shadow="xl" className={classes.card} radius="lg">
-        <Box sx={{ width: '22rem' }}>
-          <img src={photo} alt="" style={{ width: '100%' }} />
-        </Box>
+        <img src={photo} alt="" style={{ maxWidth: '100%' }} />
         <Box
           sx={{
             display: 'flex',

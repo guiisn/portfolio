@@ -36,7 +36,7 @@ export default [
     techs: "React Native, Typescript, OAuth",
   },
   {
-    name: 'Lara, Remote',
+    name: 'MobiType & Lara, Remote',
     link: 'https://parceladolara.com.br/',
     period: '05/2022 - the moment',
     office: 'Frontend Developer',

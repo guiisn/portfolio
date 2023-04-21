@@ -4,10 +4,11 @@ import { createStyles } from '@mantine/core';
 export const useStyles = createStyles((theme) => ({
   grid: {
     display: 'grid',
-    gridGap: '1.3rem',
-    gridTemplateColumns: 'repeat(auto-fit, 25rem)',
+    gridGap: '1rem',
+    gridTemplateColumns: 'repeat(auto-fit, 20rem)',
     justifyContent: 'center',
     justifyItems: 'center',
+    width: '80%'
   },
   title: {
     color: colors.text.main,
@@ -20,6 +21,7 @@ export const useStyles = createStyles((theme) => ({
   component: {
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
     gap: '1.3rem',
     marginTop: '3.75rem',
     marginBottom: '3.75rem',
