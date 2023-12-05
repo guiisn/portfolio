@@ -5,7 +5,7 @@ export const useStyles = createStyles((theme) => ({
   grid: {
     display: 'grid',
     gridGap: '1rem',
-    gridTemplateColumns: 'repeat(auto-fit, 20rem)',
+    gridTemplateColumns: 'repeat(auto-fit, 25rem)',
     justifyContent: 'center',
     justifyItems: 'center',
     width: '80%'
